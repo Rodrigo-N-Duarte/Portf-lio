@@ -69,52 +69,6 @@ body {
     margin-right: 10px;
 }
 
-/*Modificações para o mobile (navegação e rodapé)*/
-@media screen and (max-width: 1460px) {
-    #mobile-nav {
-        display: block;
-        margin-bottom: 60px;
-    }
-
-    #imgInicio {
-        width: 70%;
-        margin-top: -10%;
-        margin-left: 15%;
-    }
-    .btnCurriculo
-    {
-        margin-left: 25%;
-    }
-
-    #sobre {
-        font-size: 12px;
-        border: 2px rgb(165, 0, 0) solid;
-    }
-    .info-habilidades {
-        margin-left: -20%;
-    }
-    #projetos {
-        margin-top: 20%;
-        height: 50%;
-        position: absolute;
-    }
-    #contato
-    {
-        margin-top: 260%;
-    }
-
-    
-  
-
-    #desktop-nav,
-    #contato span,
-    #segundaLinhaProjetos,
-    .flashMessageTheme,
-    #mouseIcon,
-    #bio-icon {
-        display: none;
-    }
-}
 
 
 
@@ -180,12 +134,18 @@ body {
     transition-duration: 0.1s;
 }
 
+.btnCurriculo a,
+.btnLinkedin a,
+.btnGitHub a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .btnCurriculo:hover,
 .btnLinkedin:hover,
 .btnGitHub:hover {
     background-color: #730303;
-    color: white;
-
+    color: #fff;
 }
 
 .btnCurriculo:active,
@@ -308,11 +268,6 @@ body {
     height: 70vh;
 }
 
-#tituloHabilidades {
-    font-size: 25px;
-    padding: 2%;
-}
-
 .info-habilidades {
     padding-left: 42%;
     padding-top: 2%;
@@ -351,29 +306,14 @@ body {
 
 
 
-
-
-
-
 #projetos {
-    background-color: #f3f3f3;
-    height: 40vh;
-    text-align: center;
+    height: 70vh;
+    background-color: #f4f4f4;
 }
 
 #projetos .card {
-    margin-top: 8%;
-    margin-left: 10%;
-    cursor: pointer;
+    text-align: center;
 }
-
-
-#projetos .card:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    transition: 1s;
-}
-
-
 
 
 
@@ -390,6 +330,7 @@ body {
     padding-top: 2%;
     height: 10vh;
     position: relative;
+    bottom: 0;
 }
 
 #contato a {
@@ -402,23 +343,23 @@ body {
     margin-right: 5px;
 }
 
-#btnInstagram:hover {
+#btnInstagram span:hover {
     color: #b641b4
 }
 
-#btnEmail:hover {
+#btnEmail span:hover {
     color: #f57e7e
 }
 
-#btnLinkedin:hover {
+#btnLinkedin span:hover {
     color: #384cb0
 }
 
-#btnGithub:hover {
+#btnGithub span:hover {
     color: #8b8b8b
 }
 
-#btnWpp:hover {
+#btnWpp span:hover {
     color: #42d200
 }
 
@@ -430,10 +371,43 @@ body {
 
 
 
+/*Modificações para o mobile (navegação e rodapé)*/
+@media screen and (max-width: 1460px) {
+    #mobile-nav {
+        display: block;
+        margin-bottom: 60px;
+    }
 
+    #imgInicio {
+        width: 70%;
+        margin-top: -10%;
+        margin-left: 15%;
+    }
 
+    #sobre {
+        font-size: 15px;
+        border: 2px rgb(165, 0, 0) solid;
+    }
 
+    .info-habilidades {
+        margin-left: -20%;
+    }
 
+    #projetos {
+        height: 80vh;
+    }
 
+    #projetos .card {
+        margin-left: 10%;
+        margin-top: 5%;
+    }
 
-
+    #desktop-nav,
+    #contato span,
+    #segundaLinhaProjetos,
+    .flashMessageTheme,
+    #mouseIcon,
+    #bio-icon {
+        display: none;
+    }
+}
